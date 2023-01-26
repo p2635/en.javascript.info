@@ -153,7 +153,7 @@ So, we should declare a variable once and then refer to it without `let`.
 ```smart header="Functional languages"
 It's interesting to note that there exist so-called [pure functional](https://en.wikipedia.org/wiki/Purely_functional_programming) programming languages, such as [Haskell](https://en.wikipedia.org/wiki/Haskell), that forbid changing variable values.
 
-In such languages, once the value is stored "in the box", it's there forever. If we need to store something else, the language forces us to create a new box (declare a new variable). We can't reuse the old one.
+In these languages, once the value is stored "in the box", it's there forever. If we need to store something else, the language forces us to create a new box (declare a new variable). We can't reuse the old one.
 
 Though it may seem a little odd at first sight, these languages are quite capable of serious development. More than that, there are areas like parallel computations where this limitation confers certain benefits.
 ```
@@ -205,7 +205,7 @@ let имя = '...';
 let 我 = '...';
 ```
 
-Technically, there is no error here. Such names are allowed, but there is an international convention to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it some time.
+Technically, there is no error here. These names are allowed, but there is an international convention to use English in variable names. Even if we're writing a small script, it may have a long life ahead. People from other countries may need to read it some time.
 ````
 
 ````warn header="Reserved names"
@@ -266,7 +266,7 @@ When a programmer is sure that a variable will never change, they can declare it
 
 There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
 
-Such constants are named using capital letters and underscores.
+These constants are named using capital letters and underscores.
 
 For instance, let's make constants for colors in so-called "web" (hexadecimal) format:
 
@@ -317,7 +317,7 @@ Some good-to-follow rules are:
 
 - Use human-readable names like `userName` or `shoppingCart`.
 - Stay away from abbreviations or short names like `a`, `b`, `c`, unless you really know what you're doing.
-- Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. Such names say nothing. It's only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+- Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. These names say nothing. It's only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
 - Agree on terms within your team and in your own mind. If a site visitor is called a "user" then we should name related variables `currentUser` or `newUser` instead of `currentVisitor` or `newManInTown`.
 
 Sounds simple? Indeed it is, but creating descriptive and concise variable names in practice is not. Go for it.
@@ -327,7 +327,7 @@ And the last note. There are some lazy programmers who, instead of declaring new
 
 As a result, their variables are like boxes into which people throw different things without changing their stickers. What's inside the box now? Who knows? We need to come closer and check.
 
-Such programmers save a little bit on variable declaration but lose ten times more on debugging.
+These programmers save a little bit on variable declaration but lose ten times more on debugging.
 
 An extra variable is good, not evil.
 

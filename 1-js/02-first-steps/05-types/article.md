@@ -12,7 +12,7 @@ let message = "hello";
 message = 123456;
 ```
 
-Programming languages that allow such things, such as JavaScript, are called "dynamically typed", meaning that there exist data types, but variables are not bound to any of them.
+Programming languages such as JavaScript call these variables "dynamically typed". The term means that data types do exist, but variables are not bound to any of them.
 
 ## Number
 
@@ -43,7 +43,7 @@ Besides regular numbers, there are so-called "special numeric values" which also
 - `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
 
     ```js run
-    alert( "not a number" / 2 ); // NaN, such division is erroneous
+    alert( "not a number" / 2 ); // NaN, this division is erroneous
     ```
 
     `NaN` is sticky. Any further mathematical operation on `NaN` returns `NaN`:
@@ -92,7 +92,7 @@ A `BigInt` value is created by appending `n` to the end of an integer:
 const bigInt = 1234567890123456789012345678901234567890n;
 ```
 
-As `BigInt` numbers are rarely needed, we don't cover them here, but devoted them a separate chapter <info:bigint>. Read it when you need such big numbers.
+As `BigInt` numbers are rarely needed, we don't cover them here, but devoted them a separate chapter <info:bigint>. Read it when you need big numbers.
 
 
 ```smart header="Compatibility issues"
@@ -143,7 +143,7 @@ We'll cover strings more thoroughly in the chapter <info:string>.
 ```smart header="There is no *character* type."
 In some languages, there is a special "character" type for a single character. For example, in the C language and in Java it is called "char".
 
-In JavaScript, there is no such type. There's only one type: `string`. A string may consist of zero characters (be empty), one character or many of them.
+In JavaScript, there's only one type: `string`. A string may consist of zero characters (be empty), one character or many of them.
 ```
 
 ## Boolean (logical type)
@@ -258,14 +258,14 @@ The last three lines may need additional explanation:
 
 1. `Math` is a built-in object that provides mathematical operations. We will learn it in the chapter <info:number>. Here, it serves just as an example of an object.
 2. The result of `typeof null` is `"object"`. That's an officially recognized error in `typeof`, coming from very early days of JavaScript and kept for compatibility. Definitely, `null` is not an object. It is a special value with a separate type of its own. The behavior of `typeof` is wrong here.
-3. The result of `typeof alert` is `"function"`, because `alert` is a function. We'll study functions in the next chapters where we'll also see that there's no special "function" type in JavaScript. Functions belong to the object type. But `typeof` treats them differently, returning `"function"`. That also comes from the early days of JavaScript. Technically, such behavior isn't correct, but can be convenient in practice.
+3. The result of `typeof alert` is `"function"`, because `alert` is a function. We'll study functions in the next chapters where we'll also see that there's no special "function" type in JavaScript. Functions belong to the object type. But `typeof` treats them differently, returning `"function"`. That also comes from the early days of JavaScript. Technically, this behavior isn't correct, but can be convenient in practice.
 
 ```smart header="The `typeof(x)` syntax"
 You may also come across another syntax: `typeof(x)`. It's the same as `typeof x`.
 
 To put it clear: `typeof` is an operator, not a function. The parentheses here aren't a part of `typeof`. It's the kind of parentheses used for mathematical grouping.
 
-Usually, such parentheses contain a mathematical expression, such as `(2 + 2)`, but here they contain only one argument `(x)`. Syntactically, they allow to avoid a space between the `typeof` operator and its argument, and some people like it.
+Usually, parentheses contain a mathematical expression, such as `(2 + 2)`, but here they contain only one argument `(x)`. Syntactically, they allow to avoid a space between the `typeof` operator and its argument, and some people like it.
 
 Some people prefer `typeof(x)`, although the `typeof x` syntax is much more common.
 ```
