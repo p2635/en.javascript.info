@@ -50,10 +50,10 @@ The code outputs `6` because JavaScript does not insert semicolons here. It is i
 
 **But there are situations where JavaScript "fails" to assume a semicolon where it is really needed.**
 
-Errors which occur in such cases are quite hard to find and fix.
+Errors which occur in these cases are quite hard to find and fix.
 
 ````smart header="An example of an error"
-If you're curious to see a concrete example of such an error, check this code out:
+If you're curious to see a concrete example of this error, check this code out:
 
 ```js run
 alert("Hello");
@@ -83,7 +83,7 @@ Here's how the engine sees it:
 alert("Hello")[1, 2].forEach(alert);
 ```
 
-Looks weird, right? Such merging in this case is just wrong. We need to put a semicolon after `alert` for the code to work correctly.
+Looks weird, right? Merging code like this is just wrong. We need to put a semicolon after `alert` for the code to work correctly.
 
 This can happen in other situations also.
 ````
@@ -138,7 +138,7 @@ In most editors, a line of code can be commented out by pressing the `key:Ctrl+/
 ````warn header="Nested comments are not supported!"
 There may not be `/*...*/` inside another `/*...*/`.
 
-Such code will die with an error:
+This code will die with an error:
 
 ```js run no-beautify
 /*
